@@ -229,7 +229,7 @@ broj | udeo | y_hat
 ...
 
 loss_final=0.4704
-next_loto: [8, 16, 21, 22, 23, 33, 38]
+next_loto: [8, x, 21, y, 23, z, 38]
 
 === LOTO PLUS ===
 NN_7neurona_v2 — 7 neurona + backprop | LOTO PLUS
@@ -268,7 +268,7 @@ broj | udeo | y_hat
 ...
 
 loss_final=0.4703
-next_loto_plus: [2, 7, 8, 11, 23, 26, 34]
+next_loto_plus: [2, x, 8, y, 23, z, 34]
 """
 
 
@@ -345,8 +345,8 @@ ANALIZA — NN_7neurona_v2.py:
    next = top 7 po y_hat.
 
 4. RUN:
-   next_loto:      [8, 16, 21, 22, 23, 33, 38]
-   next_loto_plus: [2, 7, 8, 11, 23, 26, 34]
+   next_loto:      [8, x, 21, y, 23, z, 38]
+   next_loto_plus: [2, x, 8, y, 23, z, 34]
    Razlikuju se od v1 (≥1 broj). Loss ~0.47 (plafon multi-label BCE).
 
 5. Backtest (pred n−k → actual n−k+1), k=500,1000,1500:
